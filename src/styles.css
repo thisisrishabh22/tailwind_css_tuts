@@ -25,3 +25,9 @@
 .btn {
   @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
 }
+
+.sticky-nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}

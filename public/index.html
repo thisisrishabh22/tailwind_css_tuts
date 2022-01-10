@@ -13,8 +13,8 @@
     <div>
       <!-- Content Wrapper -->
       <div class="grid md:grid-cols-3">
-        <div class="md:col-span-1 md:flex md:justify-end">
-          <nav class="text-right">
+        <div class="md:col-span-1 md:flex md:justify-end sticky-nav bg-white z-50">
+          <nav class="text-right bg-white">
             <div class="flex justify-between items-center">
               <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                 <a href="/">Food Ninja</a>
@@ -126,6 +126,9 @@
                 md:border-2
                 hover:bg-primary
                 hover:text-white
+                transition
+                ease-in-out
+                duration-500
               "
               href="#"
               >Login</a
@@ -139,6 +142,9 @@
                 md:border-2
                 hover:bg-primary
                 hover:text-white
+                transition
+                ease-in-out
+                duration-500
               "
               href="#"
               >Sign Up</a
@@ -257,14 +263,99 @@
               Most Popular
             </h4>
 
-            <div class="mt-8">
+            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
               <!-- Cards -->
 
-              <div>
-                <img src="" alt="" />
-                <div>
-                  <span>5 Bean Chilli Stew</span>
-                  <span>Recipe by Mario</span>
+              <div class="card hover:shadow-lg">
+                <img
+                  src="img/stew.jpg"
+                  class="w-full h-32 sm:h-48 object-cover"
+                  alt=""
+                />
+                <div class="mx-4 my-6">
+                  <span class="font-bold">5 Bean Chilli Stew</span>
+                  <span class="block text-gray-500 text-sm"
+                    >Recipe by Mario</span
+                  >
+                </div>
+                <div class="badge">
+                  <svg
+                    class="w-5 h-5 ml-1 mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </div>
+
+              <div class="card hover:shadow-lg">
+                <img
+                  src="img/noodles.jpg"
+                  class="w-full h-32 sm:h-48 object-cover"
+                  alt=""
+                />
+                <div class="mx-4 my-6">
+                  <span class="font-bold">Veg noodles</span>
+                  <span class="block text-gray-500 text-sm"
+                    >Recipe by Mario</span
+                  >
+                </div>
+                <div class="badge">
+                  <svg
+                    class="w-5 h-5 ml-1 mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <span>30 mins</span>
+                </div>
+              </div>
+
+              <div class="card hover:shadow-lg">
+                <img
+                  src="img/curry.jpg"
+                  class="w-full h-32 sm:h-48 object-cover"
+                  alt=""
+                />
+                <div class="mx-4 my-6">
+                  <span class="font-bold">Tofu curry</span>
+                  <span class="block text-gray-500 text-sm"
+                    >Recipe by Mario</span
+                  >
+                </div>
+                <div class="badge">
+                  <svg
+                    class="w-5 h-5 ml-1 mr-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  <span>45 mins</span>
                 </div>
               </div>
             </div>
@@ -274,8 +365,14 @@
                   btn
                   focus:outline-none
                   focus:ring-4 focus:ring-secondary-100
-                  bg-secondary-200
+                  bg-secondary-200 bg-opacity-80
                   text-secondary-100
+                  transition
+                  ease-out
+                  duration-500
+                  transform
+                  scale-125
+                  hover:bg-opacity-100
                 "
               >
                 Load more

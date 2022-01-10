@@ -31754,6 +31754,11 @@ video {
   letter-spacing: 0.05em;
 }
 
+.sticky-nav { /* Safari */
+  position: sticky;
+  top: 0;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
