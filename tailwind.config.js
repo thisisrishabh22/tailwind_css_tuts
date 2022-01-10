@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        body: ["Nunito"],
+      },
       colors: {
         primary: "#FF6363",
         secondary: {
